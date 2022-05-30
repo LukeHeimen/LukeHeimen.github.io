@@ -1,0 +1,10 @@
+.intro {
+  display: block flow-root;
+  margin: 0 30%;
+  flex-wrap: wrap;
+
+  * {
+    justify-content: center;
+    align-items: center;
+  }
+}

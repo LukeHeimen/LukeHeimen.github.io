@@ -14,6 +14,9 @@ const webpackConfig = (): Configuration => ({
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
     plugins: [new TsconfigPathsPlugin({configFile: "./tsconfig.json"})],
+    alias: {
+      "@containers": path.join(__dirname, "src/containers"),
+    },
   },
   output: {
     path: path.join(__dirname, "/build"),
