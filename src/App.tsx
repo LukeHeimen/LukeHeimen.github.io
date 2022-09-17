@@ -1,13 +1,14 @@
 import React from "react";
 
-import Intro from "@containers/intro-container/Intro";
+import Intro from "@containers/intro/Intro";
+import NavBar from "@components/navbar/NavBar";
 
 import "./app.scss";
 
 function App() {
   return (
     <>
-      <div>Top nav</div>
+      <NavBar />
       <Intro />
       <div>
         <ul>
@@ -37,7 +38,22 @@ function App() {
           <li>Add download resume or cv perhaps</li>
         </ul>
       </div>
-      <div>Footer here</div>
+      <div>
+        Footer here <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
     </>
   );
 }
