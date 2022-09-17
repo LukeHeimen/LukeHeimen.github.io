@@ -12,7 +12,7 @@ const webpackConfig = (): Configuration => ({
     : {devtool: "eval-source-map"}),
 
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".scss"],
     plugins: [new TsconfigPathsPlugin({configFile: "./tsconfig.json"})],
     alias: {
       "@containers": path.join(__dirname, "src/containers"),
@@ -35,7 +35,7 @@ const webpackConfig = (): Configuration => ({
       },
       {
         test: /\.s?css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
