@@ -12,7 +12,8 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "paths": {
-      "@containers/*": ["containers/*"]
+      "@containers/*": ["containers/*"],
+      "@components/*": ["components/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable"],
     "noImplicitAny": true
